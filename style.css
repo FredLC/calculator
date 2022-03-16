@@ -1,0 +1,34 @@
+:root {
+  --main-bg: #3a4764;
+  --keypad-bg: #232c43;
+  --screen-bg: #182034;
+  --key-bg: #637097;
+  --key-shadow: #404e72;
+  --red-bg: #d03f2f;
+  --red-shadow: #93261a;
+  --light-grey-orange: #eae3dc;
+  --grey-orange: #b4a597;
+  --dark-grey-blue: #444b5a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
