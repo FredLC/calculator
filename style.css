@@ -22,6 +22,80 @@ body {
   font-family: "Spartan", sans-serif;
   font-size: 20px;
   font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-bg);
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 540px;
+  height: 700px;
+}
+
+h1,
+.screen {
+  color: white;
+}
+
+.screen,
+.keypad,
+.key {
+  border-radius: 10px;
+}
+
+.screen {
+  background-color: var(--screen-bg);
+  padding: 30px;
+  text-align: right;
+  margin: 30px 0 24px;
+  font-size: 32px;
+}
+
+.keypad {
+  background-color: var(--keypad-bg);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 32px;
+}
+
+.key {
+  background-color: var(--light-grey-orange);
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-grey-blue);
+  box-shadow: inset 0px -4px 0px var(--grey-orange);
+}
+
+.delete,
+.reset,
+.equals {
+  color: white;
+}
+
+.delete,
+.reset {
+  background-color: var(--key-bg);
+  box-shadow: inset 0px -4px 0px var(--key-shadow);
+}
+
+.reset {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.equals {
+  background-color: var(--red-bg);
+  box-shadow: inset 0px -4px 0px var(--red-shadow);
+  grid-column-start: 3;
+  grid-column-end: 5;
 }
 
 .attribution {
